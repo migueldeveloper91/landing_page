@@ -1,0 +1,226 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top"><%= image_tag('ceroHuecosH.png', :alt=>'Cero Huecos', :class=>'logo-header') %></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Descargala</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">Caracteristicas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#registro">Registrate</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contactos</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<header class="masthead">
+    <div class="container h-100">
+    <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+        <div class="header-content mx-auto">
+            <h1 class="mb-5">¡Cero Huecos es una app diseñada para reportar las fallas de la malla vial de la localidad de bosa!</h1>
+            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">¡Empieza sin complicaciones!</a>
+        </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+        <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+            <div class="device">
+                <div class="screen">
+                <%= image_tag('Screenshot_20180827-221208 (1).png', :alt=>'', :class=>'img-fluid') %>
+               
+                </div>
+                <div class="button">
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+<section class="download bg-primary text-center" id="download">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+        <h2 class="section-heading">¡Descubra de qué se trata todo este alboroto!</h2>
+        <p>¡Nuestra aplicación está disponible en cualquier dispositivo móvil! Descargue ahora para comenzar!</p>
+        <div class="badges">
+            <a class="badge-link" href="#"><%= image_tag('google-play-badge.svg') %></a>
+            <a class="badge-link" href="#"><%= image_tag('app-store-badge.svg') %></a>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="features" id="features">
+    <div class="container">
+    <div class="section-heading text-center">
+        <h2>Haste responsable de tu localidad, con un solo clic</h2>
+        <p class="text-muted">¡Mira lo que puedes hacer con esta util aplicacion!</p>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 my-auto">
+        <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+            <div class="device">
+                <div class="screen">
+                <%= image_tag('snapchat-Favim.com-2950830.jpg', :class=>'img-fluid') %>
+                </div>
+                <div class="button">
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-8 my-auto">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-6">
+                <div class="feature-item">
+                <i class="icon-screen-smartphone text-primary"></i>
+                <h3>Reportes</h3>
+                <p class="text-muted">¡Crear reportes que faciliten la ubicion de la vias en mal estado!</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-item">
+                <i class="icon-camera text-primary"></i>
+                <h3>Uso Flexible</h3>
+                <p class="text-muted">¡La app es de facil uso para cualquier tipo de persona!</p>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-6">
+                <div class="feature-item">
+                <i class="icon-settings text-primary"></i>
+                <h3>Rapida</h3>
+                <p class="text-muted">¡Reporta opurtunamente a las entidades competentes!</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-item">
+                <i class="icon-speech text-primary"></i>
+                <h3>Comunica</h3>
+                <p class="text-muted">¡Comunica y conoce los problemas en la vias!</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="cta-content">
+    <div class="container">
+        <h2>Que esperas.<br>Mejoremos nuestra localidad.</h2>
+        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">¡Empecemos!</a>
+    </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+<section class="registro bgbogota" id="registro">
+    <div class="bgbogota-content">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6 mx-auto">
+            <h2 class="section-heading">Registrate!</h2>
+            <p>Conoce el estado de las vias, las estadisticas de donde hay mas huecos en Bogota! y cuales son las reparaciones actuales.</p>
+        </div>
+        <div class="col-md-3 mx-auto"> 
+            <form>
+            <div class="form-group">
+                <label for="nombres">Nombres Y Apellidos</label>
+                <input type="text" class="form-control" id="nombres" placeholder="Ingresa tus nombres" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electronico</label>
+                <input type="password" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group" >
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="hombre" value="Hombre" checked required>
+                <label class="form-check-label" for="hombre">
+                    Hombre
+                </label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="mujer" value="Mujer">
+                <label class="form-check-label" for="mujer">
+                    Mujer
+                </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" required>
+                <small><label class="form-check-label" for="inlineCheckbox1" >Acepto los <a href="#"> Termininos y condiciones</a></label></small>
+                </div>
+            </div>
+            <div class="form-group" >
+                <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Registrarme</a>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+
+<section class="contact bg-primary" id="contact">
+    <div class="container">
+    <h2>VISITANOS EN:</h2>
+    <ul class="list-inline list-social">
+        <li class="list-inline-item social-twitter">
+        <a href="#">
+            <i class="fa fa-twitter"></i>
+        </a>
+        </li>
+        <li class="list-inline-item social-facebook">
+        <a href="#">
+            <i class="fa fa-facebook"></i>
+        </a>
+        </li>
+        <li class="list-inline-item social-google-plus">
+        <a href="#">
+            <i class="fa fa-google-plus"></i>
+        </a>
+        </li>
+    </ul>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+    <p>&copy; Your Website 2018. All Rights Reserved.</p>
+    <ul class="list-inline">
+        <li class="list-inline-item">
+        <a href="#">Privacy</a>
+        </li>
+        <li class="list-inline-item">
+        <a href="#">Terms</a>
+        </li>
+        <li class="list-inline-item">
+        <a href="#">FAQ</a>
+        </li>
+    </ul>
+    </div>
+</footer>
