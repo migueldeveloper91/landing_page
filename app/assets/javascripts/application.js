@@ -10,8 +10,11 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require new-age
-//= require new-age.min
+//= require script
+//= require script.min
+//= require jquery.easing.compatibility
+//= require jquery.easing
+//= require jquery.easing.min
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
