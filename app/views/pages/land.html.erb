@@ -13,12 +13,28 @@
         <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#features">Caracteristicas</a>
         </li>
+        <!--
         <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#registro">Registrate</a>
         </li>
+        -->
         <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contactos</a>
         </li>
+       
+        <%- if user_signed_in? %>
+        <li class="nav-item">
+            <%= link_to 'Salir', destroy_user_session_path, method: :delete %>
+        </li>
+        <% else %>
+        <li class="nav-item">
+            <%= link_to 'Iniciar Sesion ', new_user_session_path %>
+        </li>
+        <li class="nav-item">
+            <%= link_to 'Registrate', new_user_registration_path %>
+        </li>
+        <% end %>
+     
         </ul>
     </div>
     </div>
@@ -130,14 +146,14 @@
 <section class="cta">
     <div class="cta-content">
     <div class="container">
-        <h2>Que esperas.<br>Mejoremos nuestra localidad.</h2>
-        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">¡Empecemos!</a>
+      <h2>Que esperas.<br>Mejoremos nuestra localidad.</h2>
+      <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">¡Empecemos!</a>
     </div>
     </div>
     <div class="overlay"></div>
 </section>
 <section class="registro bgbogota" id="registro">
-    <div class="bgbogota-content">
+  <div class="bgbogota-content">
     <div class="container">
         <div class="row">
         <div class="col-md-6 mx-auto">
@@ -181,46 +197,46 @@
         </div>
         </div>
     </div>
-    </div>
-    <div class="overlay"></div>
+  </div>
+  <div class="overlay"></div>
 </section>
 
 <section class="contact bg-primary" id="contact">
     <div class="container">
-    <h2>VISITANOS EN:</h2>
-    <ul class="list-inline list-social">
+      <h2>VISITANOS EN:</h2>
+      <ul class="list-inline list-social">
         <li class="list-inline-item social-twitter">
-        <a href="#">
+          <a href="#">
             <i class="fa fa-twitter"></i>
-        </a>
-        </li>
-        <li class="list-inline-item social-facebook">
-        <a href="#">
-            <i class="fa fa-facebook"></i>
-        </a>
-        </li>
-        <li class="list-inline-item social-google-plus">
-        <a href="#">
-            <i class="fa fa-google-plus"></i>
-        </a>
-        </li>
-    </ul>
+          </a>
+          </li>
+          <li class="list-inline-item social-facebook">
+          <a href="#">
+              <i class="fa fa-facebook"></i>
+          </a>
+          </li>
+          <li class="list-inline-item social-google-plus">
+          <a href="#">
+              <i class="fa fa-google-plus"></i>
+          </a>
+          </li>
+      </ul>
     </div>
 </section>
 
 <footer>
-    <div class="container">
+  <div class="container">
     <p>&copy; Your Website 2018. All Rights Reserved.</p>
     <ul class="list-inline">
-        <li class="list-inline-item">
-        <a href="#">Privacy</a>
-        </li>
-        <li class="list-inline-item">
-        <a href="#">Terms</a>
-        </li>
-        <li class="list-inline-item">
+      <li class="list-inline-item">
+       <a href="#">Privacy</a>
+      </li>
+      <li class="list-inline-item">
+       <a href="#">Terms</a>
+      </li>
+      <li class="list-inline-item">
         <a href="#">FAQ</a>
-        </li>
+      </li>
     </ul>
-    </div>
+  </div>
 </footer>
